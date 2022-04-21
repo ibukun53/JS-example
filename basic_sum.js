@@ -1,9 +1,11 @@
 /*summition of numbers */
-function sum(a, b) {
-  let sum = 0;
-  for (let i = 1; i <= sum; i++) {
-    sum += i;
+function add(n,m) {
+  if (n && m) {
+    return (n + m);
+  } else
+  {
+    return  1 + (n +m);
   }
-  return a + b;
+  
 }
-console.log(sum(3, 2));
+console.log(add(7,2));
