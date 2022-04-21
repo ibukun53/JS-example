@@ -1,6 +1,13 @@
 /*multiplication of numbers */
-let a = 5;
-let b = 3;
+function multiply(a, b){
+   if( a *= b) {
+       return multiply; 
+   }else{
+       return null ;
+   }
 
-const multiply = a * b;
-console.log(3 * 2);
+}
+
+console.log(4 * 3);
+
+

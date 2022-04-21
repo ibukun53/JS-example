@@ -77,7 +77,6 @@ function Sum(a, b)
   if(a += b)
   return sum_nums ;
 }
-
 console.log(Sum_Number(3, 20));
 
 
@@ -102,3 +101,4 @@ let a = 5;
 
 const multiply = a*b;
  console.log(3*2);
+ 
