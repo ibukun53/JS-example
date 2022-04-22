@@ -1,13 +1,6 @@
-/*multiplication of numbers */
-function multiply(a, b){
-   if( a == b) {
-       return a*b; 
-   }else{
-       return null ;
-   }
 
-}
+function multiply(a,b){
+       return a * b; 
+   };
 
-console.log(multiply(4,4));
-
-
+console.log(multiply(50,45));
