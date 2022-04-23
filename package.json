@@ -16,10 +16,10 @@
     "stylelint-scss": "^3.x"
   },
   "scripts": {
-    "format": "npx prettier  --write '**/*.{html,js,json,md,json,yaml,yml,jsx}'",
-    "format:check": "npx prettier  --check '**/*.{html,js,json,md,json,yaml,yml}'",
+    "format": "npx prettier --write \"**/*.{html,json,md,yaml,yml}\'",
+    "format:check": "npx prettier  --check \"**/*.{html,json,md,yaml,yml}\'",
     "lint": "npx stylelint \"**/*.css\" --fix && npx eslint . --fix",
-    "lint:check": "npx stylelint \"**/*.css\" && npx eslint .",
+    "lint:check": "npx stylelint \"**/*.css\" && npx eslint .", 
     "stylelint": "npx stylelint \"**/*.css\" --fix",
     "stylelint:check": "npx stylelint \"**/*.css\"",
     "eslint": "npx eslint . --fix",
