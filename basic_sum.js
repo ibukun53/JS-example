@@ -1,4 +1,4 @@
-function add(n,m) {
+const  add = (n,m) =>{
     return (n + m); 
 }
 console.log(add(12,80));
