@@ -21,7 +21,7 @@
     "lint": "npx stylelint \"**/*.css\" --fix && npx eslint . --fix",
     "lint:check": "npx stylelint \"**/*.css\" && npx eslint .",
     "stylelint": "npx stylelint \"**/*.css\" --fix",
-    "stylelint:check": "npx stylelint \"**/*.css\"",
+    "stylelint:check": " ",
     "eslint": "npx eslint . --fix",
     "eslint:check": "npx eslint ."
   }
