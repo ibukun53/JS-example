@@ -1,8 +1,8 @@
-const numToLetter = (str) => {
+const numToLetter = str => {
   const orderedNums = str
     .toLowerCase()
     .split('')
-    .map((value) => value.charCodeAt() - 96)
+    .map(value => value.charCodeAt() - 96)
     .join('');
   return orderedNums;
 };
