@@ -2,7 +2,7 @@ let bandInfo;
 
 // Put your code here
 const info = {
-  name: ['miracle band'],
+  name: ['Miracle band'],
   nationality: ['Nigeria'],
   genre: ['R&B'],
   members: [50],
@@ -12,11 +12,12 @@ const info = {
     name: ['good news', 'bad news'],
     released: [2022],
   },
-  bandInfo = `${this.name} is estabished in ${this.nationality} about 
-   ${this.formed} ago with ${this.members} members with ${this.genre} style,
-   the first albums released in ${this.albums.released} with title  ${this.albums.name}.`
-   ;
 };
+// eslint-disable-next-line prefer-const
+bandInfo = `${info.name} is estabished in ${info.nationality} about 
+   ${info.formed} ago with ${info.members} members with ${info.genre} style,
+   the first albums released in ${info.albums.released} with title  ${info.albums.name}.`;
+
 const section = document.querySelector('section');
 // Don't edit the code below here!
 
