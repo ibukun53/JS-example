@@ -1,9 +1,10 @@
+/* eslint-disable no-console */
 const cat = {
   name: 'Bertie',
   breed: 'Cymric',
   color: 'white',
   greeting() {
-    `hello, said ${this.name} the ${this.breed}.`();
+    console.log(`hello, said ${cat.name} the ${cat.breed}.`);
   },
 };
 
@@ -12,7 +13,7 @@ const cat2 = {
   breed: 'goat',
   color: 'black',
   greeting() {
-    `hello, said ${this.name} the ${this.breed}.`();
+    console.log(`hello, said ${this.name} the ${this.breed}.`);
   },
 };
 
