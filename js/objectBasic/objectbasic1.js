@@ -10,8 +10,9 @@ const cat = {
 // Put your code here
 // eslint-disable-next-line dot-notation
 const catName = cat['name'];
-cat.greeting();
-cat.color = ('black');
+// eslint-disable-next-line no-console
+console.log(cat.greeting);
+cat.color = 'black';
 // Don't edit the code below here
 const section = document.querySelector('section');
 const para1 = document.createElement('p');
