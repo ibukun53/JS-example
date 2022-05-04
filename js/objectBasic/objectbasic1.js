@@ -13,6 +13,7 @@ const catName = cat['name'];
 cat.color = 'black';
 // eslint-disable-next-line no-console
 console.log(cat.greeting);
+
 // Don't edit the code below here
 const section = document.querySelector('section');
 const para1 = document.createElement('p');
