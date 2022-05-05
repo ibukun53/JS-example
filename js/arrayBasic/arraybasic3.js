@@ -1,6 +1,6 @@
 const myString = 'Ryu+Ken+Chun-Li+Cammy+Guile+Sakura+Sagat+Juri';
 const myArray = myString.split(' , ');
-const lastItem = [myArray.length - 1];
+const lastItem = [myString.length - 1];
 const arrayLength = [myString.length];
 
 const array = myArray.splice(['+']);
