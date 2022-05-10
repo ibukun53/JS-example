@@ -7,12 +7,16 @@ function Portfoliocard(name, description, language, skills, Framework, link) {
   this.framework = Framework;
   this.link = link;
   this.createElement = function createElement() {
-    const grid = document.createElement('grid');
+    const element = document.getElementsByClassName('grid');
+    element.innerHTML = `Hello, ${this.name} is a platform that tells how to ${this.description[2]} using the Language which  are${this.language[0]}, while the Skills are${this.skills[3]},
+    the framework to be use are${this.framework[1]},and ${this.link} to contact us.`;
+    /* const grid = document.createElement('grid');
     const textNode = document.createTextNode(`Hello, ${this.name} is a platform that tells how to ${this.description} using the Language which  are${this.language}, while the Skills are${this.skills},the framework to be use are${this.framework},and ${this.link} to contact us.`);
     /* const element = document.getElementsByClassName('card');
-    element[0].innerHtml = 'hi'; */
+     const div = document.createElement('div');
+    element[0].innerHtml = 'hi';
     grid.appendChild(textNode);
-    document.body.appendChild(grid);
+    document.body.appendChild(grid); */
   };
 }
 
