@@ -15,3 +15,9 @@ const portfoiliocard = new Portfoiliocard('Personal portfoilio',
   'Javscript,Ruby,Html and Css', 'Bootstrap,RUby,RSpec,Capybara and Selenium', ' Codekit, Github,Codepen,Gitlab and Terminal', 'debbyblessing1234@gmail.com');
 
 portfoiliocard.createElement();
+
+const newCard = document.createElement('h3');
+const textnew = document.createTextNode(`Hello, ${this.name} is a platform that tells how to ${this.description} using the Language which  are${this.language}, while the Skills are${this.skills},the framework to be use are${this.Framework}
+,and ${this.link} to contact us.`);
+newCard.appendChild(textnew);
+document.getElementById('.card-header').appendChild(newCard);
