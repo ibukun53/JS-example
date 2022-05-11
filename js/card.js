@@ -1,26 +1,14 @@
-/* eslint-disable max-len */
-function Portfoliocard(name, description, language, skills, Framework, link) {
-  this.name = name;
-  this.description = description;
-  this.language = language;
-  this.skills = skills;
-  this.framework = Framework;
-  this.link = link;
+function Portfoliocard(CardImg, CardHeader, CardTags) {
+  this.CardImg = CardImg;
+  this.CardHeader = CardHeader;
+  this.CardTags = CardTags;
   this.createElement = function createElement() {
-    const element = document.getElementsByClassName('grid');
-    element.innerHTML = `Hello, ${this.name} is a platform that tells how to ${this.description[2]} using the Language which  are${this.language[0]}, while the Skills are${this.skills[3]},
-    the framework to be use are${this.framework[1]},and ${this.link} to contact us.`;
-    /* const grid = document.createElement('grid');
-    const textNode = document.createTextNode(`Hello, ${this.name} is a platform that tells how to ${this.description} using the Language which  are${this.language}, while the Skills are${this.skills},the framework to be use are${this.framework},and ${this.link} to contact us.`);
-    /* const element = document.getElementsByClassName('card');
-     const div = document.createElement('div');
-    element[0].innerHtml = 'hi';
-    grid.appendChild(textNode);
-    document.body.appendChild(grid); */
+    const newdiv = document.createElement('div');
+    const element = newdiv.getElementsByClassName('card-img');
+    element[0].innerHTML = `Hello, ${Portfoliocard.CardImg} is a card that describe how a personal portfolio look  like ,the title is ${Portfoliocard.CardHeader} and this languages are used for the creation which are ${Portfoliocard.CardTags}`;
   };
 }
 
-const portfolio = new Portfoliocard('Personal portfoilio', 'build a product,feature or website Look through some of my work and experience! If you like what you see and have a project you need coded',
-  ['Javscript', 'Ruby', 'Html', 'Css'], ['Bootstrap', 'Ruby', 'RSpec', 'Capybara', 'Selenium'], [' Codekit', 'Github', 'Codepen', 'Gitlab', 'Terminal'], 'debbyblessing1234@gmail.com');
+const portfolio = new Portfoliocard('./image/Screenshot.png', 'Multi-Post Stories Gain+Glory', ['Javscript', 'Ruby on rails', 'Html', 'Css']);
 
 portfolio.createElement();
