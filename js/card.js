@@ -1,4 +1,4 @@
-function Portfoliocard(cardImg, cardHeader, cardTags) {
+function PortfolioCard(cardImg, cardHeader, cardTags) {
   this.cardImg = cardImg;
   this.cardHeader = cardHeader;
   this.cardTags = cardTags;
@@ -6,14 +6,32 @@ function Portfoliocard(cardImg, cardHeader, cardTags) {
     //  a new element
     const div = document.createElement('div');
     // returns of element into html
-    div.innerHTML = `Hello, ${this.cardImg} is a card that describe how a personal portfolio look  like ,the title is ${this.cardHeader} and the languages used for developing are ${this.cardTags}`;
+    div.innerHTML = ` <div class="grid">
+            <div class="grid-item">
+              <div class="card">
+                <img class="card-img" src="${this.cardImg}" alt="page" />
+                <h3 class="card-header">${this.cardHeader}</h3>
+                <ul class="card-content margin-left-right-auto">
+                  <li class="content-tags">${this.cardTags}</li>
+                  <li class="content-tags">css</li>
+                  <li class="content-tags">Javascript</li>
+                  <li class="content-tags">html</li>
+                </ul>
+                <div class="content-btn">
+                  <a href="#" aria-label="button">
+                    <button-style onclick ="myFunction()" class="see-projects">See Project </button-style>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div> `;
     return div;
   };
 }
 // assigning a new variable  to call the  method
-const portfolio = new Portfoliocard('./image/Screenshot.png', 'Multi-Post Stories Gain+Glory', ['Javscript', 'Ruby on rails', 'Html', 'Css']);
+const portfolioCard = new PortfolioCard('./image/Screenshot.png', 'Multi-Post Stories Gain+Glory', ['Javscript', 'Ruby on rails', 'Html', 'Css']);
 // assiging the first existing element to selector
 const div = document.querySelector('.card');
 // assigning a variable
-const port = portfolio.createElement();
-div.appendChild(port);
+const portfolio = portfolioCard.createElement();
+div.appendChild(portfolio);
