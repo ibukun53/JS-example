@@ -3,10 +3,9 @@ function PortfolioCard(cardImg, cardHeader, cardTags) {
   this.cardHeader = cardHeader;
   this.cardTags = cardTags;
   this.createElement = function createElement() {
-    const cardTags = ['html', 'css', 'javascript'];
     const newlang = cardTags => cardTags.map(e => `<li class="content-tags">${e}</li>`);
     // eslint-disable-next-line no-console
-    console.log(newlang(cardTags).join(''));
+    console.log(newlang.join(''));
     const div = document.createElement('div');
     // returns of element into html
     div.innerHTML = ` <div class="grid">
@@ -30,7 +29,7 @@ function PortfolioCard(cardImg, cardHeader, cardTags) {
 }
 
 // assigning a new variable  to call the  method
-const portfolioCard = new PortfolioCard('./image/Snapshoot Portfolio.png', 'Multi-Post Stories Gain+Glory', ['Ruby on rails', 'Html', 'Css']);
+const portfolioCard = new PortfolioCard('./image/Snapshoot Portfolio.png', 'Multi-Post Stories Gain+Glory', ['Javascript', 'Ruby on rails', 'Html', 'Css']);
 // assiging the first existing element to selector
 const div = document.querySelector('.card');
 // assigning a variable
