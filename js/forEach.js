@@ -1,3 +1,42 @@
-const numbers = [1, 2.3, 4, 5];
+const cardTags = ['Javascript', 'Ruby on rails', 'Html', 'Css'];
 // eslint-disable-next-line no-console
-numbers.forEach(element => console.log(element));
+cardTags.forEach(cardTag => `<li class="content-tags">${cardTag}</li>`);
+
+const CardDetails = [
+  {
+    title: 'Project Portfolio',
+    description: 'tells more about the project',
+    image: './img/1.png',
+    link: 'https://github.com/ibukun53/',
+    languages: ['javascript', 'css', 'html', 'ruby'],
+  },
+  {
+    title: 'Growth Portfolio',
+    description: 'gives more information about the development',
+    image: './img/2.png',
+    link: 'https://wa.me/2347013729933',
+    languages: ['javascript', 'css', 'html', 'ruby'],
+  },
+  {
+    title: 'Achievement Portfolio',
+    description: 'shows the improvement in the system',
+    image: './img/3.png',
+    link: 'https://www.linkedin.com/in/ibukun53/',
+    languages: ['javascript', 'css', 'html'],
+  },
+  {
+    title: 'Celebration Portfolio',
+    description: 'Multi-post stories gain glory',
+    image: './img/4.png',
+    link: 'https://web.facebook.com/debby.blessing.1460',
+    languages: ['javascript', 'css', 'html', 'Jquery'],
+  },
+  {
+    title: 'Competence Portfolio',
+    description: 'shows the hieracy of competent project',
+    image: './img/5.png',
+    link: 'https://t.me/debbie1234',
+    languages: ['javascript', 'css', 'html'],
+  },
+];
+const portfolioCard = new PortfolioCard(' CardDetails');
