@@ -1,5 +1,7 @@
-const subtract = (a, b) => a - b;
-
-subtract(6, 2);
-subtract(44, 10);
-subtract(6.0, 1.0);
+const subtract = (data) => data.a - data.b;
+const data = {
+  a: 44,
+  b: 10,
+};
+// eslint-disable-next-line no-console
+console.log(subtract(data));

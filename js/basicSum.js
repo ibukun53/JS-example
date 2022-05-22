@@ -1,3 +1,11 @@
-const sum = (a, b) => a + b;
+function sum(data) {
+  return data.a + data.b + data.c;
+}
+const data = {
+  a: 1,
+  b: 2,
+  c: 3,
+};
 
-sum(10, 12);
+// eslint-disable-next-line no-console
+console.log(sum(data));
