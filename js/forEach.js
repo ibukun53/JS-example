@@ -1,8 +1,4 @@
-const cardTags = ['Javascript', 'Ruby on rails', 'Html', 'Css'];
-// eslint-disable-next-line no-console
-cardTags.forEach(cardTag => `<li class="content-tags">${cardTag}</li>`);
-
-const CardDetails = [
+const cardDetails = [
   {
     title: 'Project Portfolio',
     description: 'tells more about the project',
@@ -39,4 +35,14 @@ const CardDetails = [
     languages: ['javascript', 'css', 'html'],
   },
 ];
-const portfolioCard = new PortfolioCard(' CardDetails');
+
+function PortfolioCard(data) {
+  return [cardTags, cardImg, cardHeader];
+}
+const data = {
+  cardImg: cardDetails[0],
+  cardHeader: cardDetails[0],
+  cardTags: cardDetails[0],
+};
+// eslint-disable-next-line no-console
+console.log(PortfolioCard(data));

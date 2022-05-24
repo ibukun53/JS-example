@@ -13,7 +13,7 @@ const cat2 = {
   breed: 'goat',
   color: 'black',
   greeting() {
-    console.log(`hello, said ${this.name} the ${this.breed}.`);
+    console.log(`hello, said ${cat.name} the ${cat.breed}.`);
   },
 };
 
